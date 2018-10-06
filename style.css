@@ -7,8 +7,7 @@ body {
   background: #1d1e2c;
 }
 .container {
-  width: 70%;
-  /* background: #3498db; */
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -20,26 +19,50 @@ body {
 }
 .form-box input[type="text"],
 [type="password"] {
+  box-sizing: border-box;
   display: block;
   margin: 40px auto;
   text-align: center;
   padding: 10px;
-  width: 40%;
+  width: 30%;
   background: none;
   border: none;
   outline: none;
   border-bottom: 1px solid #2980b9;
   color: #27ae60;
   font-family: Roboto, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 ::placeholder {
-  color: #34495e;
-  opacity: 0.5;
+  color: white;
+  font-style: italic;
+  opacity: 0.1;
 }
 
 .form-box h1 {
   color: #27ae60;
   text-align: center;
   margin-bottom: 100px;
+}
+
+.form-box input[type="submit"] {
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  margin: 5px auto;
+  padding: 10px 20px;
+  width: 30%;
+  color: white;
+  background: none;
+  border: 1px solid #27ae60;
+  transition: 0.2s;
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 20px;
+}
+.form-box input[type="submit"]:hover {
+  background: #27ae60;
 }
